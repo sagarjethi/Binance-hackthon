@@ -1,0 +1,12 @@
+{
+  "name": "BSC-erc20",
+  "version": "1.0.0",
+  "description": "BSC-sample ERC20 deploy",
+  "main": "truffle.js",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "openzeppelin-solidity": "^2.2.0",
+    "tslib": "^1.10.0"
+  }
+}
