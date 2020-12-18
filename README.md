@@ -2,34 +2,58 @@
 	<img src="./img/dreloan.gif"/>
 </p>
 
-### DReloan
+**DReloan**. (Re-rotating laon without credit.)
+==========
+Problem:
+===========
+Globally 1.7 billion people are unbanked, and they can’t access the basic services like education because of no money and no credit history. 
 
-Microlending for disadvantaged entrepreneurs without access to credit.
+Nowadays, mostly only secured loan is processed.  People want to start a business, get an education, but there is no such mechanism which provides them with an unsecured loan. Also, we as people want to help others for their basic needs via loan/charity. But they are not able to do because there is no such one-stop platform as well as there are many middlemen who take a significant cut in every loan they process. 
 
-## Inspiration
+And research shows that chances of getting a default of rich people are more than poor people. Poor people are more eager to pay loan to be accountable.
 
-More than 1.7 billion people around the world are unbanked and can’t access the financial services they need. DReloan aims to address this by allowing charitable lenders with tools to get resources to those that need them the most and maximize the impact of a loan by automatically relending funds once they are repaid. With crowd sourced micro-loans, students can pay for tuition, women can start businesses, farmers are able to invest in equipment and families can afford needed emergency care. With all transactions taking place on the blockchain, lenders benefit from increased accountability and borrowers can establish credit.
+Solution: 
+===========
 
-## What it does
-
-DReloan allows anyone with a Harmony wallet initiate a new loan. The lender selects one or more address of borrowers they wish to lend to and the amount they would like to lend. The funds are immediately transferred to the first account on the list and once repaid, they are transferred to the next until the end of the list is reached at which time the funds are returned to the lender. At any time the lender can add additional borrowers to the end of the list.
-
+One-stop P2P solution here lender and borrower can connect each other through BSC powered dapp  Recycloan.
+Anyone can be lender and borrower. The borrower will request for money with a detailed description of work (education/business/healthcare). The lender will lend money as part of social charity. The funds are immediately transferred to the first account on the list and once repaid, they are transferred to the next until the end of the list is reached at which time the funds are returned to the lender. At any time the lender can add additional borrowers to the end of the list.
 Anyone can query a list of borrower addresses as well as the number that have repaid a loan providing borrowers with records of their loan transactions.
 
-## How we built it
 
-DReloan comprises a smart contract on the Harmony mainnet and a web application. The web application is built using React.js and the smart contract is built using Solidity. A loan can be initiated on the DReloan smart contract using the lend function, which establishes a list of borrowers and funds the balance of the contract. The balance is immediately transferred to the first borrower. The repay function allows a borrower to repay the funds they were lent, and once the balance reaches the full amount lent, it is transferred to the next borrower.
 
-We used the harmony-core and associated harmony javascript sdk's to facilitate the contract interaction from the DReloan web UI.
+How this works:
+===========
 
-## Structure
+Let's say Alice has a lender. Bob is the borrower. 
 
-<pre>
-`application`: Client (website) for logging into a harmony wallet and sending a transaction . This project allows lending via the `lend` method of the `DReloan` smart contract. 
-`contract`: Truffle migrations and DReloan harmony smart contract.
-</pre>
+1. Alice, as the borrower, will request for money on the portal. 
+2.  Bob wants to do some charity work. Bob will come on our platform.
+3. Bob will see the Alice request and send some money through our pooled smart contract.
+4. Alice got the money, use money and after sometime wants to return the money.
+5. When Alice is returning the money, it will again go in the pool. A part of returned money will go to Bob, and another part will go to another borrower who is like Alice. This is a lending cycle for non-credit history person.
 
-## Accomplishments that we're proud of
+
+Benefits for Alice (Lender)
+===========
+1. Charity
+2. High chances of gettting higher return.
+many more ...
+
+Benefits for Bob 
+===========
+1. Get the basics necessity things done. (education, business, healthcare)
+2. Help other and create socail impact.  
+many more...
+
+
+Things done
+======
+Fully functional dapp with frontend and smart contract.
+
+
+
+Accomplishments that we're proud of
+====================================
 
 We were successfully able to deploy a smart contract on the BSC TESTNET and interact with it through out web application using our own BSC accounts.
 
@@ -37,6 +61,14 @@ We were successfully able to deploy a smart contract on the BSC TESTNET and inte
 
 testnet: 0x90171f41c63466cE31057a4C9bb5cE92D324089c
 
-## What's next for DReloan
+Next step
+======
+Work on growth. Apply to social incubator. Work on credit score mechansim.
 
-Next we plan to build a web application for borrowers to interact with our smart contracts to access their transaction records for the purpose of establishing credit history based off a wallet address. The smart contract already includes a means of accessing this information so we simply need to create a UI for querying the records.
+Resources
+======
+
+1. Binance Smart Chain docs.
+2. ReadtheDocs solidity.
+
+
